@@ -32,7 +32,7 @@ while win_and_continue:
   randomData2 = random.choice(data)
   printKeys(randomData1,'A')
   printKeys(randomData2,'B')
-  userGuess = input('\nWho has more followers?: ')
+  userGuess = input("\nWho has more followers? Type 'A' or 'B': ").upper()
   correctAnswer = compare(randomData1,randomData2)
   if userGuess == correctAnswer:
     points += 1
